@@ -1,32 +1,28 @@
-# Listed_Assignment
-This repository contains assignment for the placement drive of listed.
-
-
-# About Web APP
+# AutoMail-Replier
 This is basically nodejs script that periodically checks for new emails that are available in your account and replies to them automatically when you are on vacations. Also it adds those emails to different folder so you can have a look at them later.
 
-# What the APP is able to do?
+# What the Script is able to do?
 
-      - The app should check for new emails in a given Gmail ID
+      - Nodejs script check for new emails in given Gmail ID
       
-      - You need to implement the “Login with google” API for this
+      - Implemented the “Login with google” API for this
 
-      - The app should send replies to Emails that have no prior replies
+      - Script sends replies to Emails that have no prior replies
       
-      - The app should identify and isolate the email threads in which no prior email has been sent by you.
+      - Script identifies and isolates the email threads in which no prior email has been sent by you means only reply to first time email threads sent by others to your mailbox.
 
-      - This means that the app should only reply to first time email threads sent by others to your mailbox.
-
-      - The email that you send as a reply can have any content you’d like, it doesn’t matter.
-
-      - The app should add a Label to the email and move the email to the label
+      - Script adds up a Label to the email and move the email to the label
       
-      - After sending the reply, the email should be tagged with a label in Gmail. Feel free to name the label anything.
+      - After sending the reply, the email is tagged with a label in Gmail.
 
-      - If the label is not created already, you’ll need to create it. Use Google’s APIs to accomplish this
+      - If the label is not created already, label is created. Using Google’s APIs to accomplish this
 
-      - The app should repeat this sequence of steps 1-3 in random intervals of 45 to 120 seconds
+      - Script repeats this sequence of steps to check for new mails in random intervals of 45 to 120 seconds
       
       
 
-
+# How to start the application
+- Download this repository and open in any ide.
+- open terminal and write ```npm install googleapis```
+- You may need to download your own credentials and delete the token file (that will be created automatically for your application)
+- Run the script.
